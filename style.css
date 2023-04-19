@@ -62,3 +62,19 @@ body {
 .flipped {
     transform: rotateY(180deg);
 }
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 30em){ 
+    
+    /* Diagnostic Styling. Delete When Done. */
+    body:before {
+         background: yellow;
+         content: "Mobile Size";
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
