@@ -1,5 +1,3 @@
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ewuweblab/certificate-cards)
-
 # Certificate Cards
 
 > Extend Your Education.
