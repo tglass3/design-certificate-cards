@@ -4,7 +4,7 @@
     
     body {
         /* serif font for easier reading */
-        font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+        font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana", "Verdana Ref", sans-serif;
         /* increase font size */
         font-size: 1.25em;
 }
@@ -16,7 +16,8 @@
 
     /* turn paragraphs into colums */
     .face p {
-        columns: 2;
+        columns: 1;
+        width: 75%;
     }
 
     @page {
