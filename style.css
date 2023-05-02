@@ -48,6 +48,7 @@ body {
 
 .front {
     background: coral;
+    font-family: 'alpino-medium';
 }
 
 .back {
@@ -69,8 +70,12 @@ section img{
     object-fit: cover;
 }
 
+h1{
+    font-family: 'Alpino-Medium';
+}
+
 h3{
-    font-family: 'Alpino-Medium'
+    font-family: 'Alpino-Medium';
 }
 
 p{
