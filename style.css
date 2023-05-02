@@ -16,12 +16,13 @@ body {
 
     /* set perspective   */
     perspective: 750px;
+    padding-bottom: 150px;
 }
 
 /* card */
 .card {
     width: 100%;
-    height: 350px;
+    height: 450px;
     position: relative;
 
     cursor: pointer;
@@ -92,12 +93,14 @@ p {
   padding-top: 10px;
   color: #515151;
   font-size: 14pt;
+  font-family: 'Alpino-Regular'
 }
 
 a{
   padding-left: 15px;
   color: #0A5A5C;
   font-size: 12pt;
+  font-family: 'Alpino-Regular'
 }
 
 a:hover{
