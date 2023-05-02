@@ -71,7 +71,9 @@ section img{
 }
 
 h1{
-    font-family: 'Alpino-Medium';
+    font-family: 'Alpino-Bold';
+    font-size: 32pt;
+    text-align: center;
 }
 
 h3{
