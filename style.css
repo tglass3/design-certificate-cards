@@ -69,6 +69,14 @@ section img{
     object-fit: cover;
 }
 
+h3{
+    font-family: 'Alpino-Medium'
+}
+
+p{
+    font-family: 'Alpino-Regular';
+}
+
 /* Media Query for Mobile */
 @media only screen and (max-width: 30em){ 
     
@@ -86,5 +94,5 @@ section img{
 }
 
 section h2{
-    font-family: 'Sharpie-Regular';
+    font-family: 'Alpina-Medium';
 }
