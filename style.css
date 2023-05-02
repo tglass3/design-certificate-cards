@@ -1,105 +1,129 @@
-/* diagnostic styling */
-* {
-    outline: 1px dotted gray;
-}
-
-/* layout */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: sans-serif;
+    background: #e0e0e0;
 }
-
 
 /* scene */
 .scene {
-    width: 300px;
-    height: 400px;
+    width: 275px;
+    height: 300px;
     /* space between card-scenes */
-    margin: 16px;
+    margin: 25px;
 
     /* set perspective   */
-    perspective: 600px;
+    perspective: 750px;
 }
 
 /* card */
 .card {
     width: 100%;
-    height: 100%;
+    height: 350px;
     position: relative;
 
     cursor: pointer;
-    transition: transform .75s;
+    transition: transform 1s;
 
     /* preserve child 3d   */
     transform-style: preserve-3d;
+  
 }
 
 /* face */
 .face {
-    position: absolute;
+position: absolute;
     height: 100%;
     width: 100%;
-
-    /* hide back face   */
+  
+   /* hide back face   */
     backface-visibility: hidden;
 }
 
+/* frontface */
 .front {
-    background: coral;
-    font-family: 'alpino-medium';
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px 1px rgba(193, 193, 193, 50%); 
 }
 
+/* backface */
 .back {
-    background: cornflowerblue;
-    /* flip it default   */
-    transform: rotateY(180deg);
+  transform: rotateX(-180deg);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px 1px rgba(193, 193, 193, 50%);
 }
 
-/* flip card
-  * toggle with JS
-  */
+/* flip it? */
 .flipped {
-    transform: rotateY(180deg);
+/*   transform: scale(1.5); */
+  transform: rotateX(-180deg);
 }
 
-section img{
-    width: 100%;
-    /* height: 100% */
-    object-fit: cover;
+article {
+  transition: .75s;
+}
+
+article:hover { 
+  transform: scale(1.25);
+  
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
 
 h1{
-    font-family: 'Alpino-Bold';
-    font-size: 32pt;
-    text-align: center;
+  text-align: center;
+  color: #0A5A5C;
+  font-size: 32pt;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Alpino-Bold';
 }
 
-h3{
-    font-family: 'Alpino-Medium';
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  color: #515151;
+  font-size: 14pt;
 }
 
-p{
-    font-family: 'Alpino-Regular';
+a{
+  padding-left: 15px;
+  color: #0A5A5C;
+  font-size: 12pt;
 }
 
-/* Media Query for Mobile */
-@media only screen and (max-width: 30em){ 
-    
-    /* Diagnostic Styling. Delete When Done. */
-    body:before {
-         background: yellow;
-         content: "Mobile Size";
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-    
+a:hover{
+  color:#12A3A5;
 }
 
-section h2{
-    font-family: 'Alpina-Medium';
+
+@media screen and (max-width: 30em) {
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 2000px;
+    padding-top: 40px;
+  }
+  
+  .scene {
+    height: 600px;
+    width: 75%;
+    margin: 5px auto 5px auto;
+  }
+  
+  article:hover { 
+  transform: scale(1);
+  
 }
+  
+}
+
